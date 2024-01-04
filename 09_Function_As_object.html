@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        	//userdefine object
+function person(nm,mks)
+{
+     alert(this)
+    this.name=nm
+    this.marks=mks
+ }
+var ob=new person("mona",80);// control will go to function
+document.write(ob); //object Object
+document.write(ob.constructor); //function Person
+document.write("<hr/>")
+document.write(ob.name+" "+ob["name"])
+document.write("<hr/>")
+for(let pp in ob)
+document.write(pp+"  "+ob[pp]);
+document.write("<br>");
+document.write(ob instanceof person);//true
+document.write(ob instanceof Object);//true
+
+
+    </script>
+</body>
+</html>

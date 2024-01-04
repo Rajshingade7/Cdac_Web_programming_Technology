@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        values=[6,2,4,5,1,9];
+        var result=values.sort(function(a,b){
+            return a-b;
+        });
+        var result1=values.sort((a,b)=>a-b);
+        document.write(result);
+        document.write("<br>"+result1);
+        const array1=[1,4,9,16];
+        const map1=array1.map(x=>x*2);
+        
+        document.write("<br>"+map1);
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        function go(){
+            document.write("hello");
+        }
+        go();//function calling //hello
+        var r=go();//hello
+        console.log(r);//Undefined
+        console.write(r);
+        document.write(typeof(go));
+        document.write("<hr/>");
+        document.write(go()); // function defination will be printed on the screen
+    </script>
+</body>
+</html>

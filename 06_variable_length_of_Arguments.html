@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict"
+        function findMax(){
+            var i, max=arguments[0];//Here we are declaring variable length of arguments
+            for(i=1;i<arguments.length;i++){
+                if(arguments[i]>max){//here each time taking the value to the arguments
+                    max=arguments[i];
+                }
+                console.log(arguments);
+            console.log(typeof arguments);
+            }
+            return max;
+        }
+        var x=findMax(1,23,4,5,66,7);
+        document.write(x);
+    </script>
+</body>
+</html>

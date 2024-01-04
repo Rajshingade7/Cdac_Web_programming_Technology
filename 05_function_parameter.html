@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        function call(a,b){
+        //function call(a,b=3){//Here by this way we can set default parameter to the function and it is written at the end only 
+            //if we pass both the value to the function 
+
+            //b=b||3;//Here you are setting its own value or default value 3.
+            var p;
+            if(a!=undefined &&b!=undefined){
+                p=a*b;
+            }
+            else if(a!=undefined){
+                p=a;
+            }
+            return p;
+        }
+        var x,y;
+        x=5;
+        y=7;
+        var r=call(x);
+        document.write(r);
+        document.write("<br>");
+        document.write(call(3,3));
+    </script>
+</body>
+</html>
