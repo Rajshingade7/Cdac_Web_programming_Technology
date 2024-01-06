@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <style>
+        /* Define default color for the paragraph */
+        #text-paragraph {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <label>
+        <input type="radio" name="color" value="red" onclick="changeColor('red')"> Red
+    </label>
+
+    <label>
+        <input type="radio" name="color" value="green" onclick="changeColor('green')"> Green
+    </label>
+
+    <label>
+        <input type="radio" name="color" value="blue" onclick="changeColor('blue')"> Blue
+    </label>
+
+    <p id="text-paragraph">This is a sample paragraph.</p>
+
+    <script>
+        function changeColor(color) {
+            // Get the paragraph element
+            var paragraph = document.getElementById('text-paragraph');
+
+            // Set the color of the paragraph based on the selected radio button
+            paragraph.style.color = color;
+        }
+    </script>
+
+</body>
+</html>

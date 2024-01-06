@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function call(){
+            let s=document.getElementsByTagName("p");
+            let ss=document.getElementById("div");
+            for(i=0;i<s.length;i++){
+            ss.innerHTML+=s[i].innerHTML;            }
+
+        }
+    </script>
+    <p>
+      Hello 1  
+    </p>
+    <p>hello2</p>
+    <p>hello3</p>
+    <p>hello4</p>
+    <p>hello5</p>
+    <input type="button" onclick="call()" value="clickme"/>
+    <div id="div"></div>
+</body>
+</html>

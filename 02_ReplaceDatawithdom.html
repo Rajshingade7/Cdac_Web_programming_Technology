@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <p id="cp">hello</p>
+    <input type="button" value="copy" onclick="call()" />
+    <p id="pr"></p>
+    
+    <script>
+        function call() {
+            var x = document.getElementById("cp");
+            var y = document.getElementById("pr");
+            //y.innerHTML = x.innerHTML//Here it is coping data from first p tag to another p tag
+            y.innerHTML+=x.innerHTML//Suppose we have do this then data will get appended everytime
+        }
+        function copy(){
+            let ss=document.getElementById("divtag");
+            let ss2=document.getElementById("H1");
+            ss2.innerHTML=ss.innerHTML;
+        }
+    </script>
+</body>
+
+</html>

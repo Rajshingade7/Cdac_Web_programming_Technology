@@ -1,51 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my 1st example</title>
-</head>
-<body>
-    <script>
-        // 'use strict'
-        // var a;
-        //         document.write(a+"<br/>");
-        //     let b;
-        //         document.write(b+"<br/>");
-        //     const x=2;
-        //         document.write(x+"<br/>");
-        //             y=5;
-        // document.write(y);
-      
-    var a;
-    var b;
-    a=5;
-    b=9;
-    document.write(a+b); //14
-    document.write( a+b+" ans ");//14 ans
-    document.write("<br/>ans="+(a+b));//ans=59
-//if 1st is string and then + then “+” as concatenation operator
+    <script type="text/javascript">
+        function callme(){
+            let s = document.getElementById("pr")
+            alert(s);//Object ParagraphElement
+             alert(s.nodeName)  //name  of  node  here  is  p  tag
+             alert(s.childNodes[0].nodeValue)  //1st  child  ka  data textnode is first node
+             alert(s.childNodes[0].nodeName)//#text
+             alert(s.childNodes[0].nodeType)//3
+             alert(s.innerHTML);  //entire  data  between  tag P tag
+            alert(s.childNodes[1]. childNodes[0].nodeValue)  
+        }
+       
 
-    document.write("<br/>ans="+(a+b));//ans=14
-//In the above line () has higher presidence so it will print
-    
-
-        // var a;
-        // document.write(a);
-        // let b;
-        // console.log(a);
-        // console.log(b);
-        // const c=2;
-        // document.write(c);
-        // document.write(x);
-        // document.write("bye");
-        // 'use strict'
-        // a=5;
-        // document.write(a);
-        // let b;
-        // document.write(b);
-        // const x=2;
-        // document.write(x);
     </script>
+</head>
+
+<body>
+   
+    <!-- <p onmouseOver="callme()" id="pr">
+        Welcome
+        <b>  to world of</b>
+        Dom
+    </p> -->
+    
+
+
 </body>
-</html>
+
+</html> 
