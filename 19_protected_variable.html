@@ -1,0 +1,23 @@
+<script>
+    "use strict"
+    class Account
+    { _name;
+     _balance;
+       constructor(name,amt)
+      {   this._name=name;
+        this._balance=amt;
+      alert(typeof this.constructor)
+        }
+        toString()
+     {return `Name=${this._name} Bal=${this._balance}`  }
+    }
+    var obj1=new Account("raj",20000);
+    console.log(obj1);
+    document.write(obj1 instanceof Account);//true
+    document.write(obj1 instanceof Object);//true
+    obj1._name="geeta";
+    document.write(obj1); //object Object 
+    var obj2=new Account("Mona",50000);
+    </script>
+    
+    

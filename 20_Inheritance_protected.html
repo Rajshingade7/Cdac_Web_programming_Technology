@@ -1,0 +1,48 @@
+<script>
+class Account
+{ _firstname;
+_lastname;
+_balance;
+constructor(fname,lname,amt)
+{   this.firstname=fname;
+this.lastname=lname;
+this.balance=amt;
+}
+set firstname(value) {this._firstname=value;}
+get firstname(){ return this._firstname;}
+set balance(value) {this._balance=value;}
+get balance(){ return this._balance;}
+set lastname(value) {this._lastname=value;}
+get lastname(){ return this._lastname;}
+
+deposit(amt)
+{     this. balance +=amt;   }
+
+toString() {  return  this.firstname+ "  " + this.lastname+" "+this.balance}
+}
+
+class Savingaccount extends Account
+{
+   constructor(acctype,fname,lname,amt)
+  { super(fname,lname,amt)
+    this.type=acctype;
+  
+    }
+withdraw(amt)
+{     const minbal=1000;
+      if(amt>(this.balance-minbal))
+     throw  new TypeError("err");
+this.balance-=amt;
+
+    }
+}
+var obj=new  Savingaccount ("sav","Raj","Mathur",2000)
+obj.deposit(2000);
+document.write(obj);
+obj.withdraw(500);
+document.write(obj);
+document.write(obj.balance);
+obj.balance=50000;
+document.write(obj.balance);
+
+</script>
