@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <style>
+        .err {
+            color: rgb(0, 255, 47)
+        }
+    </style>
+    <script>
+        function check() {
+            var tobj = document.frm.nm //textbox
+            data = tobj.value //value of textbox
+            var len = data.length//inserted data in the textbox
+            let sobj = document.getElementById("ter");//span tag
+            //required
+            if (len == 0) {
+                sobj.innerHTML = "password can not be blank"
+                document.frm.nm.focus()//focus means cursor will again go in the in this condition
+                return false
+            }
+            else if (len < 8 || len > 16) {
+                sobj.innerHTML = "minimum 8 character required and can not exceed 15"
+                document.frm.nm.focus()
+                return false
+            }
+            else
+                sobj.innerHTML = ""//Here again making span tag empty
+        }
+        function setcur() {//autofocus
+            var tobj = document.frm.nm
+            tobj.focus()//Here directely it will focus(cursor) on textbox which is used in the form
+        } 
+    </script>
+</head>
+<body onLoad="setcur()">
+
+    <form name="frm" action="" onsubmit="return check()">
+
+        <label>Password</label>
+
+        <input type="text" name="nm">
+        <span id="ter" class="err"></span>
+
+        <input type="submit" value="submit">
+
+    </form>
+</body>
+
+</html>

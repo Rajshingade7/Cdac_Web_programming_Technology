@@ -1,0 +1,91 @@
+<!-- <html>
+
+<head>
+    <script type="text/javascript">
+        var c = 0; 
+        var t;
+        function timedCount() {
+            document.getElementById('txt').value = c;
+            c = c + 1;
+            t = setTimeout("timedCount()", 1000);
+
+        }
+        function sayHi() 
+            { alert('Hello'); } 
+            setTimeout(sayHi, 1000);
+
+            setTimeout(() => alert('Hello'), 2000);
+
+        function stopCount() {
+            clearTimeout(t);
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="button" value="Start count!" onClick="timedCount()">
+        <input type="text" id="txt">
+        <input type="button" value="Stop count!" onClick="stopCount()">
+    </form>
+</body>
+
+</html>  -->
+
+
+<!-- $$$$$  SET INTERVAl -->
+<!-- <!DOCTYPE html>
+
+<head>
+    <script>
+        var a; var t;
+        function st() {
+            a = 1;
+            t = setInterval("call()", 1000);
+        }
+        function call() {
+            document.getElementById("nm").value = a++;
+
+        }
+        function tp() {
+            alert("hi");
+            clearInterval(t)
+        }
+    </script>
+</head>
+
+<body>
+    <input type="textbox" id="nm" value="hi"  />
+    <input type="button" value="start" onclick="st()" />
+    <input type="button" onclick="tp()" value="stop">
+</body>
+
+</html> -->
+
+TRY THIS!!!!!!!!!!!!!!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        var a = 1;
+        var t;
+
+        function call() {
+            document.getElementById("nm").value = a++;
+            t = setInterval(call, 1000);
+        }
+
+        function stop() {
+            alert("hi");
+            clearInterval(t);
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="nm" value="hi" />
+    <input type="button" value="start" onclick="call()" />
+    <input type="button" onclick="stop()" value="stop">
+</body>
+</html>
