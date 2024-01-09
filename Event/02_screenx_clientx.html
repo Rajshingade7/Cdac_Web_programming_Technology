@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function coordinates() {
+            //screenx within our desktop screen x and y coordinates will be returned
+            x = event.screenX//retrives horizontal coordinates where we have click the mouse key
+            y = event.screenY//retrives vertical screen coordinates
+            alert("X=" + x + "Y=" + y)
+            x = event.clientX// Within the browser left and right coordinates will be returned
+            y = event.clientY
+            alert("Xcoords:" + x + ",Ycoords:" + y)
+        }
+    </script>
+</head>
+
+<body onmousedown="coordinates()">
+    <p>
+        Clicksomewhereinthedocument.Analertboxwillalertthexandycoordinatesofthecursor,relativetothescreen.
+    </p>
+</body>
+
+</html>

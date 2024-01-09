@@ -1,0 +1,50 @@
+<!-- <html>
+
+<head>
+   
+    <script type="text/javascript">
+        function whichType() {
+            alert(event)//keydown 
+            document.write(event)//Keyboardevent (name of the event)
+        }
+    </script>
+</head>
+
+<body onkeydown="whichType()">
+    <p>
+        pressanykey.Analertboxwillalertwhichtypeofeventoccurred.
+    </p>
+</body>
+
+</html> -->
+<!-- <!DOCTYPE html>
+<html><head>
+<script>
+function go()
+{
+    alert("you click button");
+}
+</script>
+</head><body>
+<form>
+<input type="button" onclick="go()"/>
+<input type="button" onclick="alert(' button == clicked' ) " />
+</form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html><head><script>
+function go()
+{ alert("click event");
+}
+</script></head><body>
+<form>
+<input type="button" id="btn"/>
+</form>
+<script>
+document.getElementById("btn").onclick=go;
+</script>
+</body>
+</html>
+

@@ -1,0 +1,22 @@
+<!DOCTYPEhtml>
+<html>
+
+<body onclick="myFunction(event)">
+    <p>Clickonaparagraph.Analertboxwillalerttheelementwhoseeventlistenertriggeredtheevent.</p>
+
+    <p><strong>Note:</strong>ThecurrentTargetpropertydoesnotnecessarily
+        returntheelementthatwasclickedon,buttheelementwhoseeventlistener
+        triggeredtheevent.</p>
+    
+    <script>
+        function myFunction(event) {
+            alert(event.currentTarget.nodeName);
+        }
+
+        //Click on a paragraph. An alert box will alert the element whose eventlistener triggered the event.[in our example it is body tag]
+
+    </script>
+    
+</body>
+
+</html>

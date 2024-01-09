@@ -1,0 +1,6 @@
+<input type="text" id="input" >oninput: <span id="result"></span>
+<script>
+ document.getElementById("input").oninput = function() {
+document.getElementById("result").innerHTML = document.getElementById("input").value;
+  };
+</script>

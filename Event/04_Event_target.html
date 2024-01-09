@@ -1,0 +1,19 @@
+<!DOCTYPEhtml>
+    <html>
+
+    <body onclick="myFunction(event)">
+        <p>Clickonanyelementsinthisdocumenttofindoutwhichelementtriggeredtheonclickevent.</p>
+        <h1>Thisisaheading</h1>
+        <button>Thisisabutton</button>
+        <p id="demo">
+            </p>
+            <script>
+                function myFunction(event){
+                    var x = event.target;//Here it will return specific tag which tag we have clicked 
+                    alert(x); //object representation of that specific tag will be returned
+                    document.getElementById("demo").innerHTML = "Triggeredbya" + x.nodeName + "element";
+                }
+            </script>
+    </body>
+
+    </html>
