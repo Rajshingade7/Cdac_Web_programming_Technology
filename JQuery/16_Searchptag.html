@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        //search p in div tag
+        $(document).ready(function () {
+
+            alert(jQuery("p", "div").length);//3
+
+        });
+    </script>
+</head>
+
+<body>
+    <p>para 1</p>
+    <p>para 2</p>
+    <div>
+        <p>div para 1</p>
+        <p>div para 2</p>
+        <p>div para 3</p>
+    </div>
+</body>
+
+</html>

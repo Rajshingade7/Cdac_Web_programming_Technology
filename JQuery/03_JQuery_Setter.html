@@ -1,0 +1,28 @@
+//Set
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        #dd {
+            color: green;
+        }
+    </style>
+    <script src=""></script>
+    <script>
+        $(document).ready(function () {
+            let p = $("#dd");
+            p.mouseover(function () {
+                p.text("<b>I have set value</b>");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p id="dd">para 1</p>
+</body>
+
+</html>

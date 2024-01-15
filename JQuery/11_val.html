@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                var a = $("#t1").val();
+                $("#t2").val(a)
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <input type="text" value="my data" id="t1" />
+    <input type="button" value="copy" id="btn" />
+    <input type="text" id="t2" />
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+//Get
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #dd {
+            color: green;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let p = $("#dd");
+            p.click(function () {
+                var a = p.html();
+                alert(a);
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <p id="dd">para 1</p>
+    <p>div para 1</p>
+    <p>div para 2</p>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html><head>
+<style>#dd{color:green;}</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+let p=$("p");
+alert(p.length)
+  p.click(function(){
+  //for(let i=0)
+var a=$("p").html(); //innerHTML
+alert(a);
+});
+});
+</script></head><body>
+<p id="dd">para 1</p>
+<p>div para 1</p>
+<p>div para 2</p>
+
+</body></html>
