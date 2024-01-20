@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Date and Time</title>
+  <script>
+    function updateDateTime() {
+      // Get current date and time
+      const now = new Date();
+
+      // Format the date and time
+      const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+        hour12: false
+      };
+
+      const formattedDateTime = now.toLocaleDateString('en-US', options);
+
+      // Update the content on the web page
+      document.getElementById('dateTime').innerText = formattedDateTime;
+
+      // Schedule the next update after 1 second
+      setTimeout(updateDateTime, 1000);
+    }
+
+    // Call the function on page load
+    window.onload = updateDateTime;
+  </script>
+  <style>
+    #dateTime {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Display area for date and time -->
+  <div id="dateTime"></div>
+</body>
+</html>
